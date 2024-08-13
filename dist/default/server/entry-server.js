@@ -428,7 +428,7 @@ const useAdminRoutes = ({ ssr, ctx, server }) => {
     {
       path: `/${admin}/sites`,
       meta: { title: "站点管理", layout: "Admin", keepAlive: true, meta: { authkey: "sites" } },
-      component: () => import("./assets/index-DqSmE36F.js")
+      component: () => import("./assets/index-DKjnwVlp.js")
     },
     {
       path: `/${admin}/sites/edit/:id?`,

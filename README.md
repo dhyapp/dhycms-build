@@ -26,17 +26,28 @@
 
 ### Docker一键部署（推荐）
 
+拉取 DHYCMS 镜像：
+```
+docker pull dhycms/dhycms:lastest
+```
+
 DHYCMS Docker 容器内置了应用程序以及所有依赖环境，开启容器即自动运行：
 ```
-docker run -d -it --name dhycms-prod --privileged=true -p 8801:22 -p 7200:7200 -p 17017:17017 -p 7107:7107 -p 8802-9000:8802-9000 dhycms/dhycms:lastest
+docker run -d -it --name dhycms-prod --privileged=true -p 8801:22 -p 7200:7200 -p 17017:17017 -p 7107:7107 -p 8802-8999:8802-8999 dhycms/dhycms:lastest
 ```
 `-d`: 保持容器后台运行<br>
+`dhycms-prod`: 容器名，可任意修改<br>
 `--privileged=true`: 开启特权，使其容器可以运行内核参数<br>
 `-p 8801:22`: 暴露容器 SSH 端口`22`到宿主环境端口`8801`<br>
 `-p 7200:7200`: 暴露应用程序 dhycms 端口`7200`到宿主环境端口`7200`<br>
 `-p 17017:17017`: 暴露容器 MongoDB 端口`17017`到宿主环境端口`17017`<br>
 `-p 7107:7107`: 暴露容器 Redis 端口`7107`到宿主环境端口`7107`<br>
-`-p 8802-9000`: 暴露容器范围端口`8802-9000`到宿主环境端口`8802-9000`，此范围端口为站群管理预设端口
+`-p 8802-8999`: 暴露容器范围端口`8802-8999`到宿主环境端口`8802-8999`，此范围端口为站群管理预设端口
+
+您也可以开启所有端口映射：
+```
+docker run -d -it --name dhycms-prod --privileged=true -P dhycms/dhycms:lastest
+```
 
 ### 手动部署
 

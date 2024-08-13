@@ -1,0 +1,1 @@
+import{a as r}from"./coms-BJ4SXf9r.js";import{_ as o}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{a0 as a}from"./vue-DoSrNxHp.js";import"./ant2-F-VMf9eP.js";import"./ant1-FgANxHEo.js";const s={inheritAttrs:!1,asyncData:r};function e(t,n,p,f,i,c){return a(t.$slots,"default")}const $=o(s,[["render",e]]);export{$ as default};

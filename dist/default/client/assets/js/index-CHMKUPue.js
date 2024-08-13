@@ -1,0 +1,1 @@
+import{r as s}from"./coms-BJ4SXf9r.js";const a=r=>s("/api/v1/admin/user/add",{method:"POST",body:JSON.stringify(r)}),d=(r,e)=>s(`/api/v1/admin/user/update/${r}`,{method:"PUT",body:JSON.stringify(e)}),i=({ids:r,body:e})=>s("/api/v1/admin/user/authreset",{method:"PUT",body:JSON.stringify({ids:r,...e})});export{a,d as b,i as u};

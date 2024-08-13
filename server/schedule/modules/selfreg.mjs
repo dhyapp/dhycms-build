@@ -1,1 +1,1 @@
-var p=b=>({});export{p as default};
+var p=x=>({});export{p as default};
