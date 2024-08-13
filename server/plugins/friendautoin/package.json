@@ -1,0 +1,14 @@
+{
+  "name": "friendautoin",
+  "version": "1.0.0",
+  "description": "友链自助收录自动收录（每2小时）",
+  "main": "index.mjs",
+  "author": "大蚁",
+  "license": "ISC",
+  "dhy": {
+    "title": "友链自助收录自动收录",
+    "auth": "pro",
+    "active": true,
+    "poster": "/assets/img/plugins/autoin.png"
+  }
+}

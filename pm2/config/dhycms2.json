@@ -1,0 +1,19 @@
+{
+  "apps": [
+    {
+      "name": "dhycms2",
+      "script": "./server/app.mjs",
+      "error_file": "./logs/dhycms2/node-err.log",
+      "out_file": "./logs/dhycms2/node-out.log",
+      "log_date_format": "HH:mm",
+      "watch": false,
+      "env": {
+        "NODE_PORT": 7200,
+        "CLIENT_TEMPLATE": "default"
+      },
+      "delay": 3000,
+      "max_memory_restart": "2048M",
+      "pid_file": "./pm2/pid/dhycms2.pid"
+    }
+  ]
+}

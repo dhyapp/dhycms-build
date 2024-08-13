@@ -1,0 +1,1 @@
+async function o(){return new Promise((n,e)=>{fetch.apply(this,arguments).then(async t=>{if(t.ok){const i=t.headers.get("content-type");if(i.indexOf("application/json")>-1){const a=await t.json();a.err?e(a):n(a)}else i.indexOf("text/plain")>-1?n(await t.text()):n(t)}else e(t)}).catch(t=>{console.log(t),e(t)})})}export{o as default};

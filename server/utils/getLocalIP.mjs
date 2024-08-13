@@ -1,0 +1,1 @@
+import i from"os";var o=()=>{const s=i.type(),e=i.networkInterfaces();let f="";if(s==="Windows_NT"){for(let t in e)if(t==="\u672C\u5730\u8FDE\u63A5"||t==="\u4EE5\u592A\u7F51"){for(let r=0;r<e[t].length;r++)if(e[t][r].family==="IPv4"){f=e[t][r].address;break}}}else s==="Linux"&&(f=e.eth0[0].address);return f};export{o as default};

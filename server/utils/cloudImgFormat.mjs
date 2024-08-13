@@ -1,0 +1,1 @@
+var u=(e,i,$,f,l)=>{if(!e)return"";if(e.startsWith("/pic/"))return`${e}?${i||0}x${$||0}-${l||""}-${f||""}`.replace(/^(.*?)\-\-?$/,"$1");if(e.indexOf("zwillcloud/")>-1){let r="?x-oss-process=image/resize";return i&&(r+=",w_"+i),$&&(r+=",h_"+$),f&&(r+=",m_"+f),l&&(r+="/format,"+l),e+r}return e};export{u as default};

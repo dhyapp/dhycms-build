@@ -1,0 +1,13 @@
+{
+  "name": "default",
+  "version": "1.0.0",
+  "author": "大蚁",
+  "license": "ISC",
+  "type": "module",
+  "dhy": {
+    "title": "导航蚁经典默认模板",
+    "poster": "/assets/img/temp/default.jpg",
+    "auth": "free",
+    "linkText": "外观"
+  }
+}
